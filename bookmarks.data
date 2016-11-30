@@ -1,24 +1,47 @@
-<li title="debian, planet"><a href="http://planet.debian.org/">Planet Debian</a></li>
-<li title="debian, development"><a href="http://www.debian.org/devel/">Debian Developers' Corner</a></li>
-<li title="sysadmin, planet"><a href="http://planetsysadmin.com/">Planet Sysadmin</a></li>
-<li title="sysadmin, reddit"><a href="http://www.reddit.com/r/sysadmin">Reddit: /r/sysadmin</a></li>
-<li title="blog, microsoft"><a href="http://blogs.msdn.com/b/oldnewthing/">The old new thing</a></li>
-<li title="blog, personal"><a href="https://blog.steve.fi/">Steve Kemp's blog</a></li>
-<li title="personal"><a href="https://steve.fi/">Steve Kemp's Website</a></li>
-<li title="development, personal"><a href="https://github.com/skx/">Steve Kemp's github account</a></li>
-<li title="news"><a href="https://news.ycombinator.com/">Hacker News</a></li>
-<li title="news, edinburgh"><a href="http://www.scotsman.com/edinburgh-evening-news">Edinburgh Evening News</a></li>
-<li title="pippo pelo, NEws"><a href="http://www.bbc.co.uk/news/">BBC News</a></li>
-<li title="personal, sysadmin, debian"><a href="http://debian-administration.org/">Debian Administration</a></li>
-<li title="sysadmin, stackexchange"><a href="http://serverfault.com/">Server Fault</a></li>
-<li title="photography, stackexchange"><a href="http://photo.stackexchange.com/">Photography Exchange</a></li>
-<li title="reddit, photography"><a href="http://www.reddit.com/r/photography/">Reddit /r/photography</a></li>
-<li><a href="http://www.thepondleith.co.uk/">The Pond, Leith</a></li>
-<li title="tools, privacy, online"><a href="https://amiunique.org/fp">Am I unique? Browser fingerprinting</a></li>
-<li title="aws, route53, amazon, github"><a href="https://github.com/open-guides/og-aws">Amazon Web Services — a practical guide</a></li>
-<li><a href="http://blog.darknedgy.net/technology/2015/09/05/0/">A history of modern init systems (1992-2015)</a></li>
-<li title="finnish, wikipedia, language, learning"><a href="http://en.wikipedia.org/wiki/Finnish_numerals">Finnish Numerals</a></li>
-<li title="prison, arrest, wikipedia"><a href="https://en.wikipedia.org/wiki/Cornealious_Michael_Anderson_III">Cornealious Michael Anderson III</a></li>
-<li title="geometry, wikipedia"><a href="https://en.wikipedia.org/wiki/Borromean_rings">Borromean Rings</a></li>
-<li title="geometry, wikipedia"><a href="https://en.wikipedia.org/wiki/Looped_square">Looped square</a></li>
-<li title="helsinki, finland, forum"><a href="http://www.finlandforum.org/">Moving to Finland, living in Finland, expat life in Finland & Finland Forum</a></li>
+<li title="ddd"><a href="https://medium.com/@ziobrando/the-rise-and-fall-of-the-dungeon-master-c2d511eed12f#.336cwtc7s">The rise and fall of the Dungeon Master — Medium</a></li>
+<li title="ddd, eventsourcing"><a href="http://www.slideshare.net/yreynhout/projections-explained">Projections explained</a></li>
+<li title="erlang"><a href="http://ferd.ca/on-erlang-s-syntax.html">ferd.ca -> On Erlang's Syntax</a></li>
+<li title="read later"><a href="http://hintjens.com/blog:109">Five Years, Five Wishes - Hintjens.com</a></li>
+<li title="erlang"><a href="http://spawnedshelter.com">Spawned Shelter - the best articles, videos and books for learning Erlang, the internals of its virtual machine and other languages that run on top of it</a></li>
+<li title="distributed"><a href="https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/">Notes on Distributed Systems for Young Bloods – Something Similar</a></li>
+<li title="ddd, eventsourcing"><a href="https://gist.github.com/gregoryyoung/a3e69ed58ae066b91f1b">Event Sourcing as 3 functions. · GitHub</a></li>
+<li title="read later"><a href="http://hintjens.com/blog:19">How to Design Perfect (Software) Products - Hintjens.com</a></li>
+<li title="ddd"><a href="http://udidahan.com/2014/11/16/watch-out-for-superficial-invariants/">Watch out for superficial invariants</a></li>
+<li title="ddd"><a href="http://verraes.net/2014/11/domain-events/">Domain Events</a></li>
+<li title="ddd"><a href="https://goodenoughsoftware.net/2014/10/22/the-test-that-cried-wolf/">The Test that Cried Wolf « Greg Young's Blog</a></li>
+<li title="ddd, cqrs, eventsourcing"><a href="http://verraes.net/2014/05/functional-foundation-for-cqrs-event-sourcing/">A Functional Foundation for CQRS/ES</a></li>
+<li title="ddd"><a href="https://skillsmatter.com/skillscasts/5193-alberto-brandolini">EventStorming Recipes | SkillsCast | 20th June 2014</a></li>
+<li title="ddd"><a href="https://skillsmatter.com/skillscasts/5437-answering-a-question">Answering a question | SkillsCast | 20th June 2014</a></li>
+<li title="vim"><a href="https://www.shortcutfoo.com">Learn shortcuts and commands | ShortcutFoo</a></li>
+<li title="cqrs"><a href="https://goodenoughsoftware.net/2012/03/02/cqrs/">CQRS « Greg Young's Blog</a></li>
+<li title="cqrs, haskell"><a href="http://tojans.me/blog/2014/02/26/cqrs-and-functional-programming/">CQRS and functional programming // Tom's ramblings</a></li>
+<li title="ddd"><a href="http://tojans.me/blog/2013/11/24/ddd-101-tips/">DDD 101 tips // Tom's ramblings</a></li>
+<li title="read later"><a href="http://hintjens.com/blog:73">Sex in Title, and Other Stories - Hintjens.com</a></li>
+<li title="ddd, eventstorming"><a href="http://ziobrando.blogspot.it/2013/11/introducing-event-storming.html">Ziobrando's Lair: Introducing Event Storming</a></li>
+<li title="ruby, ddd"><a href="https://github.com/valentjedi/ddd-dynamic">valentjedi/ddd-dynamic: Domain Driven Design in Python, Ruby and other dynamic languages resources</a></li>
+<li title="ddd, erlang"><a href="https://github.com/mrallen1/gisla">mrallen1/gisla: A library that implements the sagas pattern for Erlang</a></li>
+<li title="akka, actor-model"><a href="http://manuel.bernhardt.io/2016/08/09/akka-anti-patterns-flat-actor-hierarchies-or-mixing-business-logic-and-failure-handling/">manuel.bernhardt.io</a></li>
+<li title="erlang"><a href="http://beam-wisdoms.clau.se/en/latest/">Welcome to BEAM VM Wisdoms! — BEAM VM Wisdoms 1.0 documentation</a></li>
+<li title="erlang"><a href="https://medium.com/@elbrujohalcon/10-essential-erlang-tools-for-erlang-developers-ccfa991f0514#.vxr44lfp1">10 Essential Erlang Tools for Erlang Developers – Medium</a></li>
+<li title="rebar3, erlang, elixir"><a href="https://medium.com/tiny-tech-tales/introducing-rebar3-elixir-now-use-elixir-in-erlang-projects-b5048301094e#.g0lumj7ra">Introducing rebar3_elixir, now use Elixir in Erlang projects — Tiny Tech Tales — Medium</a></li>
+<li title="distributed, erlang"><a href="http://reiddraper.github.io/distreader/">distreader index</a></li>
+<li title="erlang"><a href="http://www.erlang.org/doc/getting_started/users_guide.html">Erlang -- Getting Started With Erlang</a></li>
+<li title="erlang"><a href="http://erldocs.com/">erldocs.com - Alternative Erlang Documentation</a></li>
+<li title="vim"><a href="http://vimawesome.com/">Vim Awesome</a></li>
+<li title="ruby, tutorial"><a href="http://www.railstutorial.org/book/demo_app">Ruby on Rails Tutorial | Softcover.io</a></li>
+<li title="bash, tutorial"><a href="http://explainshell.com/">explainshell.com - match command-line arguments to their help text</a></li>
+<li title="vim"><a href="http://vim-adventures.com/">VIM Adventures</a></li>
+<li title="macos"><a href="https://macgapproject.github.io/">MacGap</a></li>
+<li title="http, tools"><a href="https://github.com/jkbrzt/httpie">httpie</a></li>
+<li title="tools"><a href="http://requestdiff.com/">Requestdiff</a></li>
+<li title="photo"><a href="http://www.posemaniacs.com/">Posemaniacs.com</a></li>
+<li title="web, design, css"><a href="http://uigradients.com/#">uiGradients - Beautiful coloured gradients</a></li>
+<li title="tools"><a href="https://asciinema.org/">asciinema - Record and share your terminal sessions, the right way</a></li>
+<li title="vim"><a href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html">Graphical vi-vim Cheat Sheet and Tutorial</a></li>
+<li title="ruby"><a href="https://ruby.libhunt.com/">Awesome Ruby</a></li>
+<li title="ruby, docs"><a href="https://www.omniref.com/">Ruby Documentation Search - Omniref</a></li>
+<li title="ddd"><a href="https://elearn.domainlanguage.com/">Domain Language eLearning | Learn DDD</a></li>
+<li title="fun"><a href="https://www.youtube.com/watch?v=GlOoSsfU6cM">Grzegorz Brzęczyszczykiewicz. (translated). Polish tongue twister ;-) - YouTube</a></li>
+<li title="ddd"><a href="https://skillsmatter.com/skillscasts/8082-stop-over-engineering">Stop Over-Engineering! | SkillsCast | 9th June 2016</a></li>
+<li title="ddd, eventsourcing, cqrs"><a href="http://blog.sapiensworks.com/post/2016/06/06/practical-event-sourcing-and-cqrs-benefits">Practical Event Sourcing And CQRS Benefits – Sapiens Works – Maintainable code is a business advantage</a></li>
+<li title="ddd, cqrs"><a href="http://danielwhittaker.me/2015/02/02/upgrade-cqrs-events-without-busting/">How to Upgrade CQRS Events Without Busting Your Event Stream</a></li>
