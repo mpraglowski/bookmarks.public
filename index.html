@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>My Bookmarks</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
     <script type="text/javascript">
      //
@@ -23,46 +23,64 @@
        loadScript("bookmarks.js");
      });
     </script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <link rel="StyleSheet" HREF="bookmarks.css" type="text/css" media="screen"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <table id="layout">
-      <tr>
-        <td rowspan="1" valign="top">
-          <!-- THE BOOKMARKS -->
-          <ul class="bookmarks" id="bookmarks">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bookmarks</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#" onclick="toggleTags();">Toggle Tags</a></li>
+            <li><a href="#" onclick="clearFilter();">Show All</a></li>
+            <li><a href="#" onclick="showUntagged();">Untagged</a></li>
           </ul>
-          <!-- THE END OF BOOKMARKS -->
-        </td>
-        <td id="tags" valign="top">
-          <fieldset>
-            <legend><b>Tags</b></legend>
-            <p id="autotags">
-            </p>
-            <p>
-              <button title="Toggle display of tags" type="button" onclick="toggleTags();">Toggle Tags</button>
-              <button title="Show all bookmarks" type="button" onclick="clearFilter();">Show All</button>
-              <button title="Show only bookmarks with no tags" type="button" onclick="showUntagged();">Show Untagged</button>
-            </p>
-          </fieldset>
-          <p> </p>
-          <fieldset id="related_holder">
-            <legend><b>Related Tags </b></legend>
-              <div id="related"></div>
-          </fieldset>
-          <p> </p>
-          <fieldset>
-            <legend><b>Filter Bookmarks </b></legend>
-            <form id="filter" name="filter" action="#">
-              <p>Search within bookmarks: <input type="text" name="fill" id="fill" value="" size="50" /></p>
-            </form>
-          </fieldset>
-          <p> </p>
-        </td>
-      </tr>
-    </table>
+          <form class="navbar-form navbar-left" role="search" action="#">
+            <input id="fill" type="text" class="form-control" placeholder="Search" />
+          </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- THE BOOKMARKS -->
+      <ul class="bookmarks" id="bookmarks">
+      </ul>
+      <!-- THE END OF BOOKMARKS -->
+    <div class="jumbotron">
+      <div class="container">
+        <legend><b>Tags</b></legend>
+        <p id="autotags"></p>
+      </div>
+    </div>
+    <div class="jumbotron">
+      <div class="container">
+        <legend><b>Related Tags </b></legend>
+        <div id="related"></div>
+      </div>
+    </div>
+    </div>
     <p id="footer">
-      <a href="https://github.com/skx/bookmarks.public/">bookmarks.public</a> by <a href="https://steve.kemp.fi">Steve Kemp</a>.
-      </p>
+    <a href="https://github.com/skx/bookmarks.public/">bookmarks.public</a> by <a href="https://steve.kemp.fi">Steve Kemp</a>.
+    </p>
   </body>
 </html>
