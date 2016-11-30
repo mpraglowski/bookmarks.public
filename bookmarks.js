@@ -145,21 +145,6 @@ function addBookmark() {
     current = current + entry;
     document.getElementById("bookmarks").innerHTML = current;
     populateTags();
-    // Append tag to the newly added bookmark
-    $("#bookmarks").children().each(function () {
-        var id = $(this).attr("id");
-        var tag = $(this).attr("title");
-        if (id === "newOne")
-        {
-            if (tagsVisible && tag) {
-                decorate($(this), tag);
-            }
-            $(this).removeAttr("id");
-        }
-    });
-    var form = document.getElementById("newForm");
-    form.reset();
-    setupEditRemove();
 }
 
 /**
@@ -315,75 +300,6 @@ function updateView()
 }
 
 /**
- * Restore Add bookmark form back to new bookmark mode
- * after saving editing results / canceling editing
- */
-function doneEditBookmark () {
-    // cleanup form
-    $('#newName').val('');
-    $('#newLink').val('');
-    $('#newTags').val('');
-    // switch form to adding mode
-    $('.whenedit').hide();
-    $('.whenadd').show();
-}
-
-/**
- * Switch Add bookmark form to editing mode
- */
-function editBookmark (selector) {
-    var date = new Date();
-    var now  = Math.trunc(date.getTime() / 1000);
-
-    // load form
-    $('#newName').val(selector.find('> a').html());
-    $('#newLink').val(selector.find('> a').attr('href'));
-    $('#newTags').val(selector.attr('title'));
-    $('#newTime').val(selector.attr('time') || now );
-
-    // switch to editing mode
-    $('.whenadd').hide();
-    $('.whenedit').show();
-
-    $('#saveBookmark').off('click').one('click', function(){
-        // save form
-        selector.find('> a').html($('#newName').val());
-        selector.find('> a').attr('href', $('#newLink').val());
-        selector.attr('title', $('#newTags').val());
-        selector.attr('time', $('#newTime').val());
-        // update tags
-        toggleTags();
-        toggleTags();
-        // switch to adding mode
-        doneEditBookmark();
-    });
-}
-
-/**
- * Setup edit / remove handlers
- */
-function setupEditRemove () {
-    var li = $("#bookmarks > li");
-    li.mouseenter(function(){
-        var cli = $(this);
-        var clia = cli.find("> a");
-        var remove = $('<span class="context">&nbsp;&#9851;&nbsp;</span>').insertAfter(clia);
-        var edit = $('<span class="context">&nbsp;&#9998;&nbsp;</span>').insertAfter(clia);
-        edit.off('click').one('click', function(){
-            editBookmark(cli);
-        });
-        remove.off('click').one('click', function(){
-            if ( confirm( "Remove bookmark?" ) ) {
-                cli.remove();
-            }
-        });
-    });
-    li.mouseleave(function(){
-        $(this).find("span.context").remove();
-    });
-}
-
-/**
  * Load our bookmarks from the URL `bookmarks.data`, and setup our
  * initial state + listeners.
  */
@@ -432,48 +348,12 @@ function setup () {
             updateTitle();
         });
 
-        setupEditRemove();
-
         /*
          * Now update the view - in case we were loaded with a
          * hash
          */
         updateView();
     });
-}
-
-/**
- * This function saves bookmark data.
- * It hides tags temporarily then shows them if needed.
- */
-function saveDataFile() {
-    var tagsVisibleWas = tagsVisible;
-    if(tagsVisibleWas)
-        toggleTags();
-
-    $("#bookmarks li").removeAttr("style");
-    var text = $("#bookmarks").html();
-
-    // beautify text
-    text = text.trim().replace(/[\n\r]+/g, "").replace(/<\/li><li/g, "</li>\n<li");
-
-    // below code was inspired by TiddlyWiki
-    var a = $('<a target="_blank" />').appendTo('body');
-    var filename = "bookmarks.data";
-
-    if(Blob !== undefined) {
-        var blob = new Blob([text], {type: "text/html"});
-        a.attr("href", URL.createObjectURL(blob));
-    } else {
-        a.attr("href","data:text/html," + encodeURIComponent(text));
-    }
-    a.attr("download",filename);
-    a.get(0).click(); // probably there is better way to do it
-    a.remove();
-
-    if(tagsVisibleWas)
-        toggleTags();
-    updateView();
 }
 
 /**
