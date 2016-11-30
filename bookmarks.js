@@ -26,27 +26,6 @@ function showUntagged() {
     updateTitle();
 }
 
-
-/**
- * Show 25 random bookmarks
- */
-function showRandom() {
-    $("#bookmarks").children().each(function () {
-        $(this).hide();
-    });
-
-    var links = $('#bookmarks').children(),
-        len = links.length, random, i, $a;
-
-    max = Math.min( 25, len )
-    for (i = 0; i < max; i++) {
-        random = Math.floor(Math.random() * links.length);
-        $a = links.eq(random).show();
-        links = links.not($a)
-    }
-}
-
-
 /**
 * Poplate the "related tags" area.
 */
