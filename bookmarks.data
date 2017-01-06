@@ -45,3 +45,6 @@
 <li title="ddd"><a href="https://skillsmatter.com/skillscasts/8082-stop-over-engineering">Stop Over-Engineering! | SkillsCast | 9th June 2016</a></li>
 <li title="ddd, eventsourcing, cqrs"><a href="http://blog.sapiensworks.com/post/2016/06/06/practical-event-sourcing-and-cqrs-benefits">Practical Event Sourcing And CQRS Benefits – Sapiens Works – Maintainable code is a business advantage</a></li>
 <li title="ddd, cqrs"><a href="http://danielwhittaker.me/2015/02/02/upgrade-cqrs-events-without-busting/">How to Upgrade CQRS Events Without Busting Your Event Stream</a></li>
+<li title="read later, ddd, cqrs"><a href="http://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_1.pdf">Effective Aggregate Design Part I: Modeling a Single Aggregate</a></li>
+<li title="read later, ddd, cqrs"><a href="http://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_2.pdf">Effective Aggregate Design Part II: Making Aggregates Work Together</a></li>
+<li title="read later, ddd, cqrs"><a href="http://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_3.pdf">Effective Aggregate Design Part III: Gaining Insight Through Discovery</a></li>
